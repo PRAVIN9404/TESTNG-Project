@@ -23,5 +23,9 @@ public class GitDemo {
 		 driver=new ChromeDriver();
 		driver.get(value);
 	}
+	public void links()
+	{
+		driver.FindElements
+	}
 
 }
