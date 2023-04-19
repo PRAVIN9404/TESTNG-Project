@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Firest.TestNG.GitDemo">
+      <class name="GoogleMap.DemoGoogleMap">
         <methods>
           <include name="setup"/>
-          <include name="links"/>
+          <include name="rediobutten"/>
         </methods>
-      </class> <!-- Firest.TestNG.GitDemo -->
+      </class> <!-- GoogleMap.DemoGoogleMap -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
