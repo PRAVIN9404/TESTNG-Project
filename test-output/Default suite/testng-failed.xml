@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GoogleMap.DemoGoogleMap">
+      <class name="GoogleMap.TablesOnWebPage">
         <methods>
           <include name="setup"/>
-          <include name="rediobutten"/>
+          <include name="tables"/>
         </methods>
-      </class> <!-- GoogleMap.DemoGoogleMap -->
+      </class> <!-- GoogleMap.TablesOnWebPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
