@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-24T19:01:01 IST" name="Default suite" finished-at="2023-04-24T19:01:52 IST" duration-ms="51444">
+  <suite started-at="2023-04-24T20:13:00 IST" name="Default suite" finished-at="2023-04-24T20:13:35 IST" duration-ms="34969">
     <groups>
     </groups>
-    <test started-at="2023-04-24T19:01:01 IST" name="Default test" finished-at="2023-04-24T19:01:52 IST" duration-ms="51444">
-      <class name="allseleniumpractice.SelectClass">
-        <test-method is-config="true" signature="setup()[pri:0, instance:allseleniumpractice.SelectClass@1807e3f6]" started-at="2023-04-24T19:01:01 IST" name="setup" finished-at="2023-04-24T19:01:52 IST" duration-ms="50966" status="PASS">
+    <test started-at="2023-04-24T20:13:00 IST" name="Default test" finished-at="2023-04-24T20:13:35 IST" duration-ms="34969">
+      <class name="allseleniumpractice.ActionClass">
+        <test-method is-config="true" signature="setup()[pri:0, instance:allseleniumpractice.ActionClass@480d3575]" started-at="2023-04-24T20:13:00 IST" name="setup" finished-at="2023-04-24T20:13:35 IST" duration-ms="34312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="selectclass()[pri:0, instance:allseleniumpractice.SelectClass@1807e3f6]" started-at="2023-04-24T19:01:52 IST" name="selectclass" finished-at="2023-04-24T19:01:52 IST" duration-ms="285" status="PASS">
+        <test-method signature="Action()[pri:0, instance:allseleniumpractice.ActionClass@480d3575]" started-at="2023-04-24T20:13:35 IST" name="Action" finished-at="2023-04-24T20:13:35 IST" duration-ms="466" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectclass -->
-      </class> <!-- allseleniumpractice.SelectClass -->
+        </test-method> <!-- Action -->
+      </class> <!-- allseleniumpractice.ActionClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
