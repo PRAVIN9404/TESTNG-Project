@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GoogleMap.TablesOnWebPage">
+      <class name="allseleniumpractice.SelectClass">
         <methods>
           <include name="setup"/>
-          <include name="tables"/>
+          <include name="selectclass"/>
         </methods>
-      </class> <!-- GoogleMap.TablesOnWebPage -->
+      </class> <!-- allseleniumpractice.SelectClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

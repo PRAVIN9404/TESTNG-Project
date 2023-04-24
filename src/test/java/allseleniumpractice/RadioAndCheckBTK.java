@@ -1,21 +1,20 @@
-package GoogleMap;
+package allseleniumpractice;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.List;
 import java.util.Properties;
-
-import javax.sound.sampled.spi.AudioFileReader;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class TablesOnWebPage {
+public class RadioAndCheckBTK {
+	
 	WebDriver driver;
 	@BeforeTest
 	public void setup() throws IOException
@@ -27,26 +26,32 @@ public class TablesOnWebPage {
 		FileReader fread=new FileReader(filepath);
 		Properties p=new Properties();
 		p.load(fread);
+		String value = p.getProperty("guruurl");
 		
-		String value=p.getProperty("tableurl");
 		System.setProperty("webdriver.chrome.driver", browserpath);
 		ChromeOptions option=new ChromeOptions();
 		option.addArguments("--remote-allow-origins=*");
-		 driver=new ChromeDriver(option);
-		 driver.get(value);
-		
+	    driver=new ChromeDriver(option);
+	    driver.get(value);
 		
 	}
 	@Test
-	public void tables()
+	public void rediobutten() throws InterruptedException
 	{
-		List<WebElement> main = driver.findElements(By.xpath("//table[@class='dataTable']/tbody/tr[1]"));
-		for (WebElement j:main)
-		{
-			String cp = j.findElement(By.xpath("td[3]")).getText();
-			String cp1=j.findElement(By.xpath("td[4]")).getText();
-			System.out.println(cp+"  "+cp1);
-		}
+		
+		driver.findElement(By.xpath("(//input[@value='Option 1'])")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("(//input[@value='Option 2'])")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("(//input[@value='Option 3'])")).click();
+		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath("(//input[@value='checkbox1'])")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("(//input[@value='checkbox2'])")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("(//input[@value='checkbox3'])")).click();
+		
 	}
 
 }

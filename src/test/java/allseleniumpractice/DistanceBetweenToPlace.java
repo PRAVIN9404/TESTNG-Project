@@ -1,4 +1,4 @@
-package GoogleMap;
+package allseleniumpractice;
 
 import java.io.FileReader;
 import java.io.IOException;

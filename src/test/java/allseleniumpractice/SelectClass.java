@@ -1,4 +1,4 @@
-package GoogleMap;
+package allseleniumpractice;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -13,8 +13,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class RadioAndCheckBTK {
-	
+public class SelectClass {
 	WebDriver driver;
 	@BeforeTest
 	public void setup() throws IOException
@@ -26,32 +25,27 @@ public class RadioAndCheckBTK {
 		FileReader fread=new FileReader(filepath);
 		Properties p=new Properties();
 		p.load(fread);
-		String value = p.getProperty("guruurl");
 		
+		String value=p.getProperty("Selectclass");
 		System.setProperty("webdriver.chrome.driver", browserpath);
 		ChromeOptions option=new ChromeOptions();
 		option.addArguments("--remote-allow-origins=*");
-	    driver=new ChromeDriver(option);
-	    driver.get(value);
-		
+		 driver=new ChromeDriver(option);
+		 driver.get(value);
 	}
+	
 	@Test
-	public void rediobutten() throws InterruptedException
+	public void selectclass() throws InterruptedException
 	{
+		WebElement drop_dwon = driver.findElement(By.xpath("//select[@name='country']"));
 		
-		driver.findElement(By.xpath("(//input[@value='Option 1'])")).click();
-		Thread.sleep(5000);
-		driver.findElement(By.xpath("(//input[@value='Option 2'])")).click();
-		Thread.sleep(5000);
-		driver.findElement(By.xpath("(//input[@value='Option 3'])")).click();
-		Thread.sleep(5000);
+		Select s=new Select(drop_dwon);
 		
-		driver.findElement(By.xpath("(//input[@value='checkbox1'])")).click();
-		Thread.sleep(5000);
-		driver.findElement(By.xpath("(//input[@value='checkbox2'])")).click();
-		Thread.sleep(5000);
-		driver.findElement(By.xpath("(//input[@value='checkbox3'])")).click();
+		s.selectByVisibleText("AMERICAN SAMOA");
+	
 		
+		//Thread.sleep(5000);
+		//s.selectByVisibleText("ANDORRA");
 	}
 
 }
